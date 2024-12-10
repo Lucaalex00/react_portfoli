@@ -1,7 +1,8 @@
-import React from 'react';
-import './carousel.css';
+import React from "react";
+import "./carousel.css";
 import HtmlLogo from "./img/Html.png.png";
 import CssLogo from "./img/Css.png.png";
+import AngularLogo from "./img/Angular.png.png";
 import JsLogo from "./img/Js.png.png";
 import ReactLogo from "./img/React.png.png";
 import VueLogo from "./img/Vue.png.png";
@@ -18,11 +19,12 @@ const FrontEndCarouselComponent = () => {
     JsLogo,
     ReactLogo,
     VueLogo,
+    AngularLogo,
     NodeLogo,
     TailwindLogo,
     BoostrapLogo,
     MUILogo,
-    SassLogo
+    SassLogo,
   ];
 
   return (
@@ -30,12 +32,22 @@ const FrontEndCarouselComponent = () => {
       <div className="carousel-track">
         <div className="carousel-slide">
           {images.map((src, index) => (
-            <img key={index} src={src} className="carousel-image" alt={`Logo ${index}`} />
+            <img
+              key={index}
+              src={src}
+              className="carousel-image"
+              alt={`Logo ${index}`}
+            />
           ))}
         </div>
         <div className="carousel-slide">
           {images.map((src, index) => (
-            <img key={index} src={src} className="carousel-image" alt={`Logo ${index}`} />
+            <img
+              key={index}
+              src={src}
+              className="carousel-image"
+              alt={`Logo ${index}`}
+            />
           ))}
         </div>
       </div>
